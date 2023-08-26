@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=devuce-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/FRMCONTACTO.css">
+    <title>FORMULARIO</title>
+</head>
+<body background="linear-gradient">
+    <header>
+        <img src="./IMG/incap.png" width="100px" height="100px" alt="">
+        <h1>FORMULARIO INCAP</h1>
+        
+    </header>
+<nav>
+    <p> Este formulario es para registrar el ingreso de un estudiante de Incap</p>
+</nav>
+<section>
+<!-- PHP: Method Get pasa los datos por la url, atravez de paramentros // Method POST pasa los datos de forma interna (no se)-->
+<form action="" >
+    <!-- seccion marco del formulario-->
+    <fieldset>
+    <!-- seccion de ingresp de nombre-->
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" placeholder="Ingrese nombre" autofocus required><br><br>
+        <!-- seccion de ingreso de email-->
+        <label>Emil:</label>
+        <input type="email" name="emil" placeholder="Ingrese email" required><br><br>
+        <!-- seccion de ingreso de contraseña-->
+        <label>Contraseña:</label>
+        <input type="password" name="Contraseña" placeholder="Ingrese contraseña" required><br><br>
+        <!--seccion de hobbies-->
+        <label>Selecciona tus hobbies</label>
+        <br>
+        <input type="checkbox" name="cine">Cine
+        <input type="checkbox" name="lectura">Lectura
+        <input type="checkbox" name="deporte">deporte
+        <br><br>
+
+        <!--seccion de estado civil -->
+        <label>Estado civil</label><br>
+        <input type="radio" name="estadocivil" value="casado">Casado(a)
+        <input type="radio" name="estadocivil" value="soltero">Soltero(a)
+        <input type="radio" name="estadocivil" value="viudo">Viudo(a)
+        <br><br>
+        <!-- seccion opcion de lista-->
+    <label>PROGRAMAS TECNICOS INCAP</label>
+    <select name="select">
+    <option value="">Sellecione programa...</option><br>
+    <option value="sistemas">Programacion BBDD</option><br>
+    <option value="diseño">Diseño Grafico</option><br>
+    <option value="contabilidad">Contabilidad</option><br>
+    </select>
+    <br>
+    <label>Fecha de nacimiento:</label><br>
+    <input type="date" name="fechanac" title="Ingrese su edad" name="edad"/>
+    <br>
+    <label> Coloce su edad</label><br>
+    <input type="number" min="1" max="120" title="Ingrese su edad" name="edad"/>
+    <br>
+    <br>
+    <label>Subir foto - archivo:</label><br>
+    <input type="file" name="archivo"/>
+    <br><br>
+    <!-- seccion comentarios-->
+    <label>Comentario:</label>
+    <br>
+        <textarea name="Comentario" cols="40" rows="5"></textarea>
+    </fieldset>
+    <br><br>
+    <!-- seccion de botones de enviar (submit)y cancelar (reset)-->
+    <button type="submit">ENVIAR</button>
+    <button type="reset">CANCELAR</button>
+    <br><br>
+    </form>
+    </section>
+    <footer>
+    Derechos reservados &coby;2023 @Heladio /kvvl
+    </footer>
+</body>
+</html>
